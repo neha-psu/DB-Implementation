@@ -1,12 +1,17 @@
 # DB-Implementation project part1
 ### 1. Brief description:
-### Main intention was to generate data based on Wisconsin benchmark specification. The data is generated using script written in python language. Once the data gets generated, we load that into PostgreSQL database.
+Main intention was to generate data based on Wisconsin benchmark specification. The data is generated using script written in python language. Once the data gets generated, we load that into PostgreSQL database using "COPY" command.
 
 ### 2. System working with and why chose it –
-### PostgreSQL database, Python language. Reason for choosing this database is: we are familiar and have experience working with this database.  
+PostgreSQL database. <br />
+Reason for choosing this Sytem is: We are familiar and have experience working with this system.  ALso it is quite easy to use. 
 
 ### 3. Demonstrate that data is loaded into system:
-### Uploaded CSV files are the ones that we extracted from the PostgreSQL select queries.   
+We used postgres copy command to load the data into the system. Loaded all the three relations - TENKTUP1, TENKTUP2, ONEKTUP into the postgres.<br />
+Command used : \copy db.ONEKTUP FROM './ONEKTUP.csv' DELIMITER ',' CSV HEADER;<br />
+Below is the snapshot for ONEKTUP relation.
+![](Images/onektup.PNG)
+Likewise did for other two relations.
 
 ### 4. Lessons learnt/ problems encountered:
-### This project helped us to connect the bridge between a database system and python program. Learned to generate relations in pgadmin and populate them through a python file.
+Lessons learnt : How to create clustered and non clustered indexes on an attribute 
