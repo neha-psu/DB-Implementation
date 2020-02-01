@@ -14,5 +14,12 @@ Below is the snapshot for ONEKTUP relation.
 Likewise did for other two relations.
 
 ### 4. Lessons learnt/ problems encountered:
-Lessons learnt : How to create clustered and non clustered indexes on an attribute 
-
+Lessons learnt : <br />
+<ul><li> How to create clustered and non clustered indexes on an attribute.</li>
+<li /> Making the Benchmark scalable by manipulating the string attributes.
+<li /> Understood the semantics and Statistics of relations.
+<li /> Control of selectivity
+</ul>
+Problems Encountered : <br />
+<ul> Faced issues while generating data for string atrributes. Python does not allows to get character at particular array index. Converted the string into list. ALso used str = dict(zip(range(1, 27), string.ascii_uppercase)) to replace numbers with letters.
+</ul>
