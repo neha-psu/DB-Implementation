@@ -28,7 +28,7 @@ def convert(unique):
     return listToString(result)
     
 def datagenerate(records, headers):
-    with open("TENKTUP2.csv", 'wt') as csvFile:
+    with open("TENKTUP2.csv", 'wt', newline='') as csvFile:
         writer = csv.DictWriter(csvFile, fieldnames=headers)
         writer.writeheader()
         unique2,unique1=[],[]
